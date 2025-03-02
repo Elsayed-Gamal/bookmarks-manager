@@ -1,8 +1,13 @@
 import { useBookmarks } from '../contexts/BookmarksContext';
 import styles from './BookmarksList.module.css';
+import Message from './Message';
 
 function BookmarksList() {
   const { bookmarks, currentCategoryToShow, removeBookmark } = useBookmarks();
+
+  if (bookmarks.length === 0) {
+    return <Message>Please add a bookmark</Message>;
+  }
 
   return (
     <ul className={styles.bookmarksList}>
