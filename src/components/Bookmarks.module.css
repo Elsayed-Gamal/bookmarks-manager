@@ -1,0 +1,34 @@
+.bookmarks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookmarks p {
+  margin-top: 5px;
+}
+
+.bookmarks ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.bookmarks ul button {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.bookmarks ul button:hover,
+.bookmarks ul li:global(.active) button {
+  background-color: #3e8ac0;
+  color: white;
+  border-color: #3e8ac0;
+}

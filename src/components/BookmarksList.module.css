@@ -1,0 +1,35 @@
+.bookmarksList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bookmarksList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #e6f1fa;
+  border-radius: 5px;
+}
+
+.bookmarksList li span {
+  background-color: #3392d6;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.bookmarksList li a {
+  color: #00477a;
+  text-decoration: none;
+}
+
+.bookmarksList li button {
+  background-color: #e57373;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border-color: #e57373;
+}

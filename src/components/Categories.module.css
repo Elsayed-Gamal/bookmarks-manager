@@ -1,0 +1,25 @@
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.categories ul li {
+  padding: 7.5px 15px;
+  background-color: #3e8ac0;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
